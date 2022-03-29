@@ -13,14 +13,14 @@
         if (typeof props[propName] !== 'string') {
           return new Error(
             `Hey, the component ${componentName} needs the prop ${propName} to be a string, but a ${typeof props[
-              propName
+            propName
             ]} was passed`,
           )
         }
       },
     }
 
-    function Message({subject, greeting}) {
+    function Message({ subject, greeting }) {
       return (
         <div className="message">
           {greeting}, {subject}
